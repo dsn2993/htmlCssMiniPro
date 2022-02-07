@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Basic Layout design1 </title>
+    <style>
+        body {
+            font-family: cursive;
+            background-color: peachpuff;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            /* border: 2px solid black; */
+            width: 900px;
+            height: 600px;
+            margin: auto;
+            background-color: whitesmoke;
+        }
+
+        #header {
+            background-color: orange;
+            height: 100px;
+        }
+        #header h1{
+            padding: 30px 10px;
+        }
+
+        #menu {
+            background-color: coral;
+        }
+
+        #menu li {
+            display: inline-block;
+        }
+
+        #menu li a {
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu ul {
+            margin: 0px;
+            padding: 5px;
+        }
+        #menu li a:hover{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+
+        #content {
+            /* border: 2px solid salmon; */
+            width: 600px;
+            min-height: 400px;
+            float: left;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        #sideBar {
+            /* border: 2px solid salmon; */
+            width: 300px;
+            min-height: 400px;
+            float: right;
+            background-color: rgba(86, 37, 221, 0.3);
+        }
+        #sideBar a{
+            text-decoration: none;
+            color: black;   
+        }
+        #sideBar a:hover{
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        #footer {
+            clear: both;
+            background-color: coral;
+            padding: 2px 10px;
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Here we are making simple project -->
+    <div class="container">
+        <div id="header">
+            <h1>Website Name</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h3>Sub Heading</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque enim quasi reprehenderit temporibus natus
+                dolorum omnis recusandae reiciendis labore deleniti, expedita sequi quisquam, aspernatur asperiores
+                minus autem assumenda ipsam officiis, tenetur accusantium doloremque cupiditate itaque! Eius sed sint
+                dicta quod sapiente aperiam ab, esse, quibusdam adipisci quaerat minima similique odio!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam libero, voluptates mollitia ut recusandae
+                eveniet quos dicta aut omnis ex.</p>
+        </div>
+
+        <div id="sideBar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            WebsiteName@copyright.com
+        </div>
+    </div>
+
+</body>
+</html>
